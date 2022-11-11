@@ -8,16 +8,14 @@
       runs-on:  ubuntu-latest
 
       steps:
-        - name: 'Before printing folder Contents'
-          run: ls
-
         - uses: actions/checkout@v3
+
         - name: 'Login to docker hub'
           run: docker login --username ${{ secrets.MEROO }} --password ${{ secrets.TOKENNAME }}  
 
-        - name: 'Build Docker image'
+        - name: "Building Docker image"
           run: docker build -t ${{ secrets.MEROO }}/mynewimage .
 
-        - name: 'push to Docker Hub'
+        - name: "pushing to Docker hub"
           run: docker push ${{ secrets.MEROO }}/mynewimage
  
