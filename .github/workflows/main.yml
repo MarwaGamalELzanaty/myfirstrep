@@ -14,8 +14,8 @@
           run: docker login --username ${{ secrets.MEROO }} --password ${{ secrets.TOKENNAME }}  
 
         - name: "Building Docker image"
-          run: docker build -t ${{ secrets.MEROO }}/mynewwimage .
+          run: docker build -t ${{ secrets.MEROO }}/meroimage .
 
         - name: "pushing to Docker hub"
-          run: docker push ${{ secrets.MEROO }}/mynewwimage
+          run: docker push ${{ secrets.MEROO }}/meroimage
  
