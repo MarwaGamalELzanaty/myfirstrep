@@ -13,5 +13,5 @@
 
         - uses: actions/checkout@v3
         - name: 'Login to docker hub'
-          run: docker login --username marwagamal5 --password dckr_pat_ZyETbguS94pyZCO5-M272fCPQCY  
+          run: docker login --username ${{ secrets.MEROO }} --password ${{ secrets.TOKENNAME }}  
 
