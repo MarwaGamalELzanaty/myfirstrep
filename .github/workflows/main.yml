@@ -1,1 +1,16 @@
+  on:
+    push:
+      branches:
+        - masterr
+
+  jobs:
+    build:
+      runs-on:  ubuntu-latest
+
+      steps:
+        - name: 'Test action'
+          run: pwd
+
+        - name: 'Teast printing'
+          run: echo Marwa
 
