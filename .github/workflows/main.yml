@@ -18,6 +18,6 @@
 
         - name: "pushing to Docker hub"
           run: 
-            -docker tag firstimage ${{ secrets.MEROO }}/firstimage
-            -docker push ${{ secrets.MEROO }}/firstimage
+            docker tag firstimage ${{ secrets.MEROO }}/firstimage
+            docker push ${{ secrets.MEROO }}/firstimage
  
