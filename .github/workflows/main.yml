@@ -8,8 +8,10 @@
       runs-on:  ubuntu-latest
 
       steps:
-        - name: 'printing folder Contents'
+        - name: 'Before printing folder Contents'
           run: ls
 
-        
+        - uses: actions/checkout@v3
+        - name: 'After printing folder Contents'
+          run: ls 
 
