@@ -8,9 +8,8 @@
       runs-on:  ubuntu-latest
 
       steps:
-        - name: 'Test action'
-          run: pwd
+        - name: 'printing folder Contents'
+          run: ls
 
-        - name: 'Teast printing'
-          run: echo Marwa
+        
 
