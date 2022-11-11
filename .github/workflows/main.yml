@@ -17,6 +17,7 @@
 
         - name: 'Build Docker image'
           run: docker build -t ${{ secrets.MEROO }}/MyNewImage .
+          
         - name: 'push to Docker Hub'
           run: docker push ${{ secrets.MEROO }}/MyNewImage
  
